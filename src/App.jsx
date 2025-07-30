@@ -45,7 +45,7 @@ function AppWrapper() {
       {isAdmin && !isLoginPage && <AdminNavbar />}
 
       {/* ✅ تطبيق marginTop حسب الهيدر المعروض */}
-      <div style={{ padding: "1rem", marginTop: headerHeight }}>
+      <div style={{ padding: "0rem", marginTop: headerHeight }}>
         <Routes>
           {/* صفحات المستخدم */}
           <Route path="/" element={<Home />} />
