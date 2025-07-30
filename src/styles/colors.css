@@ -1,0 +1,40 @@
+:root {
+  --color-light: #F2F2F2;
+  --color-cream: #EAE4D5;
+  --color-brownish: #B6B09F;
+  --color-black: #000000;
+}
+
+/* كلاس يستخدم الخلفيات */
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.bg-cream {
+  background-color: var(--color-cream);
+}
+
+.bg-brownish {
+  background-color: var(--color-brownish);
+}
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+/* كلاس يستخدم الألوان للنص */
+.text-light {
+  color: var(--color-light);
+}
+
+.text-cream {
+  color: var(--color-cream);
+}
+
+.text-brownish {
+  color: var(--color-brownish);
+}
+
+.text-black {
+  color: var(--color-black);
+}
