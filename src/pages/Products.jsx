@@ -198,7 +198,6 @@ const Products = () => {
                                 <option value="name">الاسم</option>
                                 <option value="price-low">السعر: من الأقل للأعلى</option>
                                 <option value="price-high">السعر: من الأعلى للأقل</option>
-                                <option value="rating">التقييم</option>
                             </select>
                         </div>
 

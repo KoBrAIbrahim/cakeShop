@@ -138,21 +138,26 @@ const AddProductModal = ({ onClose, onAdd }) => {
             }}>
               📦 نوع المنتج
             </label>
-            <input 
-              type="text" 
-              placeholder="مثال: كيك، حلويات، معجنات" 
-              value={type} 
-              onChange={(e) => setType(e.target.value)} 
-              style={inputStyle}
-              onFocus={(e) => {
-                e.target.style.borderColor = "#DCC5B2";
-                e.target.style.boxShadow = "0 0 0 3px rgba(220, 197, 178, 0.2)";
-              }}
-              onBlur={(e) => {
-                e.target.style.borderColor = "#F0E4D3";
-                e.target.style.boxShadow = "none";
-              }}
-            />
+<select 
+  value={type} 
+  onChange={(e) => setType(e.target.value)} 
+  style={{ ...inputStyle, appearance: "none", cursor: "pointer" }}
+  onFocus={(e) => {
+    e.target.style.borderColor = "#DCC5B2";
+    e.target.style.boxShadow = "0 0 0 3px rgba(220, 197, 178, 0.2)";
+  }}
+  onBlur={(e) => {
+    e.target.style.borderColor = "#F0E4D3";
+    e.target.style.boxShadow = "none";
+  }}
+>
+  <option value="" disabled>اختر نوع المنتج</option>
+  <option value="كيك">كيك</option>
+  <option value="تشيز كيك">تشيز كيك</option>
+  <option value="حلويات صحية">حلويات صحية</option>
+  <option value="حلويات صغيرة">حلويات صغيرة</option>
+</select>
+
           </div>
 
           {/* Description */}
