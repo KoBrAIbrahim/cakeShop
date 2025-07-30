@@ -277,18 +277,19 @@ const Cart = () => {
                       </div>
                       
                       <div className="form-actions">
-                        <button
-                          className="cancel-btn"
-                          onClick={() => setShowAddressForm(false)}
-                        >
-                          إلغاء
-                        </button>
+                       
                         <button
                           className="submit-btn"
                           onClick={submitOrder}
                           disabled={!customerName || !city || !fullAddress || !phoneNumber}
                         >
                           🚀 تأكيد الطلب
+                        </button>
+                         <button
+                          className="cancel-btn"
+                          onClick={() => setShowAddressForm(false)}
+                        >
+                          إلغاء
                         </button>
                       </div>
                     </div>
@@ -760,6 +761,7 @@ const advancedStyles = `
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+    flex-direction: row-reverse;
   }
 
   .cancel-btn {
